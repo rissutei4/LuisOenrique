@@ -23,10 +23,10 @@
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"><i class="far fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav text-center">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#Home">Home</a>
                     </li>
@@ -50,7 +50,7 @@
 <section class="underHeaderSection" id="Home">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-6 headerInfoLeft">
+            <div class="col-md-6 headerInfoLeft order-2">
                 <h3>Luis Oenrique.</h3>
 
                 <div class="btnsGroup">
@@ -60,7 +60,7 @@
 
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 order-1">
                 <img src="images/headerHero.png" alt="" class="img-fluid">
             </div>
         </div>
@@ -69,7 +69,7 @@
 <div class="knowMore" id="About">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-6">
+            <div class="col-md-6 order-2">
                 <div class="row">
                     <div class="aboutText col-md-10">
                         <h3>Know More <br> About Me</h3>
@@ -81,7 +81,7 @@
 
                 <a download href="fake-CV.txt" class="btn btn-outline-secondary">Download My CV</a>
             </div>
-            <div class="col-md-6 aboutImg">
+            <div class="col-md-6 aboutImg order-1">
                 <img src="images/aboutImg.jpg" alt="" class="img-fluid">
             </div>
         </div>
@@ -90,21 +90,21 @@
 <div class="ServicesList" id="Service">
     <div class="container">
         <h3 class="text-center">Services</h3>
-        <div class="row row-cols-md-4 row-cols-sm-2 justify-content-between">
+        <div class="row justify-content-between">
 
-            <div class="col mb-5 d-flex align-items-center flex-column">
+            <div class="col-md-4 col-sm-2 mb-5 d-flex align-items-center flex-column">
                 <div class="servImg">
                     <img src="images/researchService.png" alt="" class="img-fluid">
                 </div>
                 <span>User Research</span>
             </div>
-            <div class="col mb-5 d-flex align-items-center flex-column">
+            <div class="col-md-4 col-sm-2 mb-5 d-flex align-items-center flex-column">
                 <div class="servImg">
                     <img src="images/wireframesService.png" alt="" class="img-fluid">
                 </div>
                 <span>AI And Wireframes</span>
             </div>
-            <div class="col mb-5 d-flex align-items-center flex-column">
+            <div class="col-md-4 col-sm-2 mb-5 d-flex align-items-center flex-column">
                 <div class="servImg">
                     <img src="images/testingService.png" alt="" class="img-fluid">
                 </div>
@@ -112,21 +112,21 @@
             </div>
 
         </div>
-        <div class="row row-cols-md-4 row-cols-sm-2 justify-content-between">
+        <div class="row justify-content-between">
 
-            <div class="col mb-5 d-flex align-items-center flex-column">
+            <div class="col-md-4 col-sm-2 mb-5 d-flex align-items-center flex-column">
                 <div class="servImg">
                     <img src="images/UIService.png" alt="" class="img-fluid">
                 </div>
                 <span>Looks and Feel Design (UI)</span>
             </div>
-            <div class="col mb-5 d-flex align-items-center flex-column">
+            <div class="col-md-4 col-sm-2 mb-5 d-flex align-items-center flex-column">
                 <div class="servImg">
                     <img src="images/deliveryService.png" alt="" class="img-fluid">
                 </div>
                 <span>Delivery</span>
             </div>
-            <div class="col mb-5 d-flex align-items-center flex-column">
+            <div class="col-md-4 col-sm-2 mb-5 d-flex align-items-center flex-column">
                 <div class="servImg">
                     <img src="images/supportService.png" alt="" class="img-fluid">
                 </div>
@@ -147,7 +147,7 @@
 <div class="portfolioSection" id="Portfolio">
     <div class="container">
         <h3 class="text-center">Portfolio</h3>
-        <div class="row row-cols-md-3 row-cols-sm-2 justify-content-between">
+        <div class="row row-cols-md-3 row-cols-sm-2 justify-content-between fl-colmn">
 
             <div class="col mb-5 d-flex align-items-center flex-column">
                 <div class="workImg">
@@ -172,7 +172,7 @@
             </div>
 
         </div>
-        <div class="row row-cols-md-3 row-cols-sm-2 justify-content-between">
+        <div class="row row-cols-md-3 row-cols-sm-2 justify-content-between fl-colmn">
 
             <div class="col mb-5 d-flex align-items-center flex-column">
                 <div class="workImg">
@@ -197,7 +197,7 @@
         </div>
 
         <!--hidden blocks-->
-        <div class="row row-cols-md-3 row-cols-sm-2 justify-content-between flex-row">
+        <div class="row row-cols-md-3 row-cols-sm-2 justify-content-between flex-row fl-colmn">
 
             <div class="col mb-5 align-items-center flex-column dsNone">
                 <div class="workImg">
@@ -220,7 +220,7 @@
             </div>
 
         </div>
-        <div class="row row-cols-md-3 row-cols-sm-2 justify-content-between flex-row ">
+        <div class="row row-cols-md-3 row-cols-sm-2 justify-content-between flex-row fl-colmn ">
 
             <div class="col mb-5 align-items-center flex-column dsNone">
                 <div class="workImg">
@@ -385,8 +385,8 @@
 <footer class="contactSection" id="Contact">
     <div class="container contactCont">
         <h3 class="text-center">Say Hello!</h3>
-        <div class="row d-flex justify-content-center">
-            <div class="col-md-10">
+        <div class="row d-flex m-auto">
+            <div class="col-md-10 col-sm-12 m-auto">
                 <form action="#" method="post" class="row justify-content-center">
                     <div class="form-group col-md-6 col-sm-12">
                         <input type="text" id="inputName" class="form-control" placeholder="Name">
