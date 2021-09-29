@@ -1,0 +1,443 @@
+@import url(fonts.css);
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+.btnsGroup {
+  display: flex;
+  align-items: center; }
+
+.btn-custom {
+  border-radius: 0;
+  border: 1px solid transparent;
+  background: #ffffff;
+  color: #4d4d4d;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 13px 50px;
+  transition: 0.2s linear;
+  font-family: "Asap Condensed-Medium", sans-serif;
+  cursor: pointer;
+  box-shadow: 0 0.5em 1em -0.4em rgba(0, 0, 0, 0.32); }
+  .btn-custom:hover {
+    border-radius: 0;
+    border: 1px solid #4d4d4d;
+    transition: 0.2s linear;
+    background: none; }
+
+.btn-outline-secondary {
+  background: transparent;
+  padding: 13px 50px;
+  font-size: 16px;
+  color: #4d4d4d;
+  border-radius: 0;
+  border: 1px solid #4d4d4d;
+  transition: 0.2s linear;
+  text-transform: uppercase;
+  font-family: "Asap Condensed-Medium", sans-serif;
+  cursor: pointer; }
+  .btn-outline-secondary:hover {
+    border: 1px solid transparent;
+    background: #ffffff;
+    color: #4d4d4d;
+    box-shadow: 0 0.5em 1em -0.4em rgba(0, 0, 0, 0.32); }
+
+.btnCont {
+  display: flex;
+  justify-content: center; }
+
+.dsNone {
+  display: none; }
+
+header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  padding: 15px 0; }
+  header .navbar-brand img {
+    transition: 0.3s linear; }
+    header .navbar-brand img:hover {
+      opacity: 0.8;
+      filter: brightness(90%); }
+  header ul li a {
+    color: #454545;
+    text-transform: uppercase;
+    font-family: "Asap Condensed-Regular", sans-serif;
+    transition: 0.4s linear;
+    margin-right: 19px;
+    font-size: 16px; }
+    header ul li a:after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0;
+      background-color: #878787;
+      margin-top: 8px;
+      opacity: 0;
+      transition: 0.3s; }
+    header ul li a:hover {
+      color: #3B3B3BFF; }
+      header ul li a:hover:after {
+        opacity: 1;
+        width: 100%; }
+    header ul li a.active {
+      text-transform: capitalize;
+      transition: 0.3s; }
+      header ul li a.active:after {
+        content: "";
+        display: block;
+        height: 2px;
+        background-color: #878787;
+        margin-top: 8px;
+        opacity: 1;
+        width: 100%; }
+
+.underHeaderSection {
+  background-image: url("../images/headerBackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+  padding-top: 130px; }
+  .underHeaderSection .headerInfoLeft h3 {
+    font-family: "Asap Condensed-Medium", sans-serif;
+    font-size: 90px;
+    color: #4d4d4d;
+    text-transform: capitalize; }
+    .underHeaderSection .headerInfoLeft h3:after {
+      content: "User Experience / User Interface Expert";
+      display: block;
+      text-transform: capitalize;
+      font-size: 22px;
+      margin-top: 23px;
+      margin-bottom: 33px;
+      color: #9a9a9a; }
+
+.knowMore {
+  padding: 110px 0; }
+  .knowMore h3 {
+    font-size: 46px;
+    line-height: 46px;
+    color: #4d4d4d;
+    font-family: "Asap Condensed-Bold", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    opacity: 80%;
+    margin-bottom: 15px; }
+    .knowMore h3:before {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 60px;
+      background-color: #4d4d4d;
+      margin-bottom: 20px;
+      opacity: 80%; }
+  .knowMore p {
+    font-size: 16px;
+    line-height: 25px;
+    color: #4d4d4d;
+    margin-bottom: 36px;
+    font-family: "Asap Condensed-Bold", sans-serif; }
+
+.ServicesList {
+  background: #f6f6f6;
+  padding: 110px 0; }
+  .ServicesList h3 {
+    color: #717171;
+    text-transform: uppercase;
+    font-family: "Asap Condensed-Bold", sans-serif;
+    margin-bottom: 70px;
+    font-size: 46px; }
+    .ServicesList h3:before {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 60px;
+      background-color: #717171;
+      opacity: 80%;
+      margin: 0 auto 15px; }
+  .ServicesList .servImg {
+    margin-bottom: 20px; }
+  .ServicesList span {
+    font-family: "Asap Condensed-Medium", sans-serif;
+    font-size: 24px;
+    color: #4d4d4d; }
+
+.skillsSection {
+  padding: 110px 0;
+  color: #fff; }
+  .skillsSection h3 {
+    color: #717171;
+    text-transform: uppercase;
+    font-family: "Asap Condensed-Bold", sans-serif;
+    margin-bottom: 70px;
+    font-size: 46px; }
+    .skillsSection h3:before {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 60px;
+      background-color: #717171;
+      opacity: 80%;
+      margin: 0 auto 15px; }
+
+.portfolioSection {
+  padding: 110px 0;
+  color: #fff;
+  background-color: #f6f6f6; }
+  .portfolioSection h3 {
+    color: #717171;
+    text-transform: uppercase;
+    font-family: "Asap Condensed-Bold", sans-serif;
+    margin-bottom: 70px;
+    font-size: 46px; }
+    .portfolioSection h3:before {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 60px;
+      background-color: #717171;
+      opacity: 80%;
+      margin: 0 auto 15px; }
+  .portfolioSection .col .mb-5 .d-flex .align-items-center .flex-column.dsNone {
+    display: none; }
+  .portfolioSection .workImg {
+    margin-bottom: 35px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden; }
+    .portfolioSection .workImg img {
+      transition: all 0.3s;
+      transform: scale(1); }
+    .portfolioSection .workImg:hover img {
+      opacity: 0.8;
+      filter: brightness(40%);
+      transform: scale(1.1); }
+    .portfolioSection .workImg a {
+      transition: 0.5s ease-in-out;
+      opacity: 0;
+      position: absolute;
+      top: 45%;
+      right: 45%;
+      height: 41px;
+      width: 41px;
+      background-color: #fff;
+      box-shadow: 0 1px 15px 0 rgba(34, 60, 80, 0.2); }
+      .portfolioSection .workImg a:before {
+        font-family: "Font Awesome 5 Pro", sans-serif;
+        content: "\f054";
+        font-weight: 900;
+        color: #4d4d4d;
+        font-size: 25px;
+        position: absolute;
+        top: 6%;
+        right: 31%; }
+    .portfolioSection .workImg:hover a {
+      opacity: 1; }
+
+.testimonialsSection {
+  padding: 110px 0;
+  color: #fff;
+  background-color: #ffffff; }
+  .testimonialsSection h3.text-center {
+    color: #717171;
+    text-transform: uppercase;
+    font-family: "Asap Condensed-Bold", sans-serif;
+    margin-bottom: 70px;
+    font-size: 46px; }
+    .testimonialsSection h3.text-center:before {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 60px;
+      background-color: #717171;
+      opacity: 80%;
+      margin: 0 auto 15px; }
+  .testimonialsSection .borderBlock {
+    border: 1px solid #212121; }
+    .testimonialsSection .borderBlock .owl-carousel {
+      position: relative; }
+    .testimonialsSection .borderBlock .owl-dots {
+      position: absolute;
+      bottom: 38px;
+      left: 45%; }
+    .testimonialsSection .borderBlock .owl-carousel .owl-dots span {
+      width: 13px;
+      height: 13px;
+      background-color: transparent;
+      border: 2px solid #212121;
+      display: inline-block;
+      transition: 0.3s; }
+    .testimonialsSection .borderBlock .owl-carousel .owl-dots .active span {
+      background-color: #212121;
+      border: 2px solid #212121;
+      width: 13px;
+      height: 13px;
+      display: inline-block;
+      text-align: center; }
+    .testimonialsSection .borderBlock .owl-carousel .owl-dots button:nth-child(2) {
+      margin: 0 0 0 9px; }
+    .testimonialsSection .borderBlock .owl-carousel .owl-dots button:nth-child(3) {
+      margin: 0 9px 0 9px; }
+    .testimonialsSection .borderBlock .reviewBlock {
+      padding: 81px 0;
+      max-width: 850px;
+      width: 100%; }
+      .testimonialsSection .borderBlock .reviewBlock .reviewContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        .testimonialsSection .borderBlock .reviewBlock .reviewContent .speakerImg {
+          width: 150px;
+          height: 150px;
+          overflow: hidden;
+          margin-right: 30px; }
+          .testimonialsSection .borderBlock .reviewBlock .reviewContent .speakerImg img {
+            height: 100%; }
+        .testimonialsSection .borderBlock .reviewBlock .reviewContent .headTextColmn {
+          display: flex;
+          flex-direction: column;
+          max-width: 650px; }
+          .testimonialsSection .borderBlock .reviewBlock .reviewContent .headTextColmn .reviewHeading h3 {
+            font-size: 30px;
+            line-height: 30px;
+            color: #373737;
+            text-transform: uppercase;
+            font-family: "Asap Condensed-Bold", sans-serif; }
+            .testimonialsSection .borderBlock .reviewBlock .reviewContent .headTextColmn .reviewHeading h3:after {
+              display: block;
+              margin-top: 9px;
+              content: "CEO, Random Company";
+              font-size: 12px;
+              line-height: 12px;
+              color: #212121;
+              font-family: "Asap Condensed-Italic", sans-serif;
+              font-style: italic;
+              margin-bottom: 15px; }
+          .testimonialsSection .borderBlock .reviewBlock .reviewContent .headTextColmn .reviewText p {
+            font-size: 16px;
+            line-height: 24px;
+            color: #7a7a7a;
+            opacity: 60%;
+            font-family: "Asap Condensed-Regular", sans-serif;
+            text-transform: uppercase; }
+
+.positiveThingsLine {
+  padding: 52px 0;
+  background-color: #f6f6f6;
+  margin-bottom: 154px; }
+  .positiveThingsLine .positThing {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .positiveThingsLine .positThing span {
+      font-family: "Asap Condensed-Regular", sans-serif;
+      font-size: 30px;
+      color: #4c4c4c;
+      font-weight: bold;
+      margin-top: 36px;
+      margin-bottom: 16px; }
+    .positiveThingsLine .positThing h3 {
+      font-family: "Asap Condensed-Medium", sans-serif;
+      font-size: 22px;
+      text-transform: uppercase;
+      color: #454545; }
+
+.contactSection {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/footer_bg.jpg"); }
+  .contactSection .contactCont {
+    padding: 60px 0 38px; }
+    .contactSection .contactCont h3.text-center {
+      color: #ffffff;
+      text-transform: uppercase;
+      font-family: "Asap Condensed-Bold", sans-serif;
+      margin-bottom: 70px;
+      font-size: 46px; }
+      .contactSection .contactCont h3.text-center:before {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 60px;
+        background-color: #ffffff;
+        opacity: 80%;
+        margin: 0 auto 15px; }
+    .contactSection .contactCont form .form-group .form-control {
+      height: 57px;
+      border-radius: 0;
+      color: #212121;
+      font-size: 16px;
+      font-family: "Asap Condensed-Regular", sans-serif; }
+    .contactSection .contactCont form .form-group input:focus {
+      outline: 0 !important;
+      box-shadow: none !important; }
+    .contactSection .contactCont form .form-group textarea.form-control {
+      height: 207px;
+      resize: none; }
+      .contactSection .contactCont form .form-group textarea.form-control:focus {
+        outline: 0 !important;
+        box-shadow: none !important; }
+    .contactSection .contactCont form button {
+      border: none !important;
+      margin-top: 30px; }
+      .contactSection .contactCont form button:hover {
+        border: none !important; }
+  .contactSection .footerSec {
+    border-top: 1px solid #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 32px 0 0;
+    margin-top: 58px; }
+    .contactSection .footerSec .socialM a {
+      background: #fff;
+      padding: 7px 9px;
+      line-height: 7px;
+      transition: 0.4s linear; }
+      .contactSection .footerSec .socialM a i {
+        color: #4a5768;
+        transition: 0.4s linear; }
+      .contactSection .footerSec .socialM a:hover {
+        background: #0985bf; }
+        .contactSection .footerSec .socialM a:hover i {
+          color: #fff; }
+    .contactSection .footerSec h3 {
+      font-family: "Montserrat-Regular", sans-serif;
+      color: #fff;
+      font-size: 16px;
+      text-align: center; }
+
+span.scrollToTop {
+  position: fixed;
+  box-shadow: 0 1px 15px 0 rgba(34, 60, 80, 0.2);
+  height: 41px;
+  width: 41px;
+  z-index: 4;
+  bottom: 193px;
+  right: 30px;
+  background-color: #ffff;
+  transition: 0.4s linear;
+  display: none; }
+  span.scrollToTop.active {
+    display: block; }
+  span.scrollToTop:before {
+    font-family: "Font Awesome 5 Pro", sans-serif;
+    content: "\f077";
+    font-weight: 900;
+    color: #4d4d4d;
+    font-size: 15px;
+    position: absolute;
+    top: 25%;
+    right: 35%; }
+  span.scrollToTop:hover {
+    background-color: #C6C6C6FF; }
+    span.scrollToTop:hover:before {
+      color: #7d7d7d; }
+
+/*# sourceMappingURL=styles.css.map */
